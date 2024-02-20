@@ -16,3 +16,7 @@ jobs:
         run: mvn package -DskipTests
       - name: Build HPI
         run: mvn hpi:hpi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-graph-view-hpi
+          path: target/pipeline-graph-view.hpi

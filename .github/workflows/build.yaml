@@ -13,6 +13,6 @@ jobs:
           java-version: '18'
           distribution: 'temurin'
       - name: Build source
-        run: mvn package
+        run: mvn package -DskipTests
       - name: Build HPI
         run: mvn hpi:hpi

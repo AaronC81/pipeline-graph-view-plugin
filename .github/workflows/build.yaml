@@ -13,6 +13,6 @@ jobs:
           java-version: '18'
           distribution: 'temurin'
       - name: Verify
-        run: mvn validate-hpi
+        run: mvn verify
       - name: Build HPI
         run: mvn hpi:hpi
